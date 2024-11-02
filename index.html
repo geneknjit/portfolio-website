@@ -10,31 +10,104 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="main-content">
-    <header class="section sec1 header active">
-
+    <header class="section sec1 header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img class="image-profile" src="img/2024_Profile.jpg" alt="profile">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    <span>Gene Kanieski</span>
+                    <br>
+                    Software Engineer
+                </h1>
+                <p>
+                    I have a background in software engineering and I am passionate about creating software solutions that are user-friendly and efficient. I am a quick learner and I am always looking for ways to improve my skills and knowledge.
+                </p>
+                <div class="button-container">
+                    <a href="" class="main-button">
+                        <span class="button-text">Download CV</span>
+                        <span class="button-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="section sec2 about"></section>
-        <section class="section sec3 skills"></section>
-        <section class="section sec4 projects"></section>
-        <section class="section sec5 contact"></section>
+        <section class="section sec2 skills" id="skills"></section>
+        <section class="section sec3 portfolio" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Projects</span></h2>
+            </div>
+            <p class="portfolio-text">Here are some of my programming projects.</p>
+            <div class="projects">
+                <div class="project-item">
+                    <div class="image">
+                        <img src="img/newspaper.jfif" alt="project">
+                    </div>
+                    <div class="hover-item">
+                        <h3>News Headlines</h3>
+                        <div class="icons">
+                            <a class="icon" href="https://github.com/geneknjit/news-headlines" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/stock-market.jpg" alt="project">
+                    <div class="hover-item">
+                        <h3>Stock Tracker</h3>
+                        <div class="icons">
+                            <a class="icon" href="https://github.com/geneknjit/stock-tracker" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/earthquake.png" alt="project">
+                    <div class="hover-item">
+                        <h3>Earthquake Data</h3>
+                        <div class="icons">
+                            <a class="icon" href="https://github.com/geneknjit/earthquake-data" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="img/bible.jpg" alt="project">
+                    <div class="hover-item">
+                        <h3>Bible Word Clouds</h3>
+                        <div class="icons">
+                            <a class="icon" href="https://github.com/geneknjit/nt-wordclouds" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec4 contact" id="contact"></section>
     </main>
     <div class="controls">
-        <div class="control control-1 active-btn" data-id="header">
+        <div class="control control-1 active-button" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
-        <div class="control control-2" data-id="about">
-            <i class="fa-solid fa-user"></i>
-        </div>
-        <div class="control control-3" data-id="skills">
+        <div class="control control-2" data-id="skills">
             <i class="fa-solid fa-screwdriver-wrench"></i>
         </div>
-        <div class="control control-4" data-id="projects">
+        <div class="control control-3" data-id="portfolio">
             <i class="fa-solid fa-diagram-project"></i>
         </div>
-        <div class="control control-5" data-id="contact">
+        <div class="control control-4" data-id="contact">
             <i class="fa-regular fa-envelope"></i>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
