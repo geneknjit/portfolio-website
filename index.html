@@ -13,9 +13,8 @@
     <header class="section sec1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img class="image-profile" src="img/profile.jpg" alt="profile">
+                <div class="h-shape">
+                    <img class="image-profile" src="img/tech-security.png" alt="profile">
                 </div>
             </div>
             <div class="right-header">
@@ -37,7 +36,40 @@
         </div>
     </header>
     <main>
-        <!--<section class="section sec2 skills" id="skills"></section>-->
+        <section class="section sec2 skills" id="skills">
+            <div class="skills-container">
+                <div class="main-title">
+                    <h2>My <span>Skills</span></h2>
+                </div>
+                <div class="skill-item">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Programming</h3>
+                    <p>
+                        I have experience with several programming languages including C#, Python, and JavaScript. I have also worked with frameworks and libraries including .NET Core, React, Flask, and Pandas.
+                    </p>
+                </div>
+                <div class="skill-item">
+                    <div class="icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>
+                        I have experience with front-end and back-end web development. I have worked with HTML, CSS, and JavaScript to create user-friendly interfaces. I have also worked with databases and server-side technologies to create dynamic web applications.
+                    </p>
+                </div>
+                <div class="skill-item">
+                    <div class="icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Technology</h3>
+                    <p>
+                        I have experience with cloud technologies including AWS and Azure. I have worked with many cloud services including CI/CD Pipelines, EC2, S3, and RDS. I have also worked with serverless technologies including Lambda and API Gateway.
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="section sec3 portfolio" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Projects</span></h2>
@@ -99,7 +131,6 @@
                 </div>
                 <div class="contact-content-container">
                     <div class="left-contact">
-                        <h4>Contact me here</h4>
                         <p>
                             Here is my contact information and social media links. Feel free
                             to reach out to me if you have any questions or would like to work together.
@@ -139,22 +170,22 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form action="https://formspree.io/f/xkgnbnga" method="POST" class="contact-form">
                             <div class="input-control input-control-2">
-                                <input type="text" required placeholder="Your Name">
-                                <input type="email" required placeholder="Your Email">
+                                <input type="text" name="first" required placeholder="First Name">
+                                <input type="text" name="last" required placeholder="Last Name">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="Subject">
+                                <input type="email" name="email" required placeholder="Email Address">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Type your message"></textarea>
+                                <textarea name="message" id="" cols="15" rows="8" placeholder="Type your message"></textarea>
                             </div>
                             <div class="submit-button">
-                                <a href="" class="main-button">
+                                <button type="submit" class="main-button">
                                     <span class="button-text">Submit</span>
                                     <span class="button-icon"><i class="fas fa-envelope"></i></span>
-                                </a>
+                                </button>
                             </div>
                         </form>
                     </div>
@@ -166,9 +197,9 @@
         <div class="control control-1 active-button" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
-        <!--<div class="control control-2" data-id="skills">
+        <div class="control control-2" data-id="skills">
             <i class="fa-solid fa-screwdriver-wrench"></i>
-        </div>-->
+        </div>
         <div class="control control-3" data-id="portfolio">
             <i class="fa-solid fa-diagram-project"></i>
         </div>
@@ -177,5 +208,6 @@
         </div>
     </div>
     <script src="app.js"></script>
+</script>
 </body>
 </html>
