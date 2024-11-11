@@ -126,7 +126,7 @@ section {
 }
 @media (max-width: 768px) {
   .controls {
-    right: 1%;
+    right: 2%;
   }
 }
 .controls .active-button {
@@ -170,11 +170,6 @@ section {
   align-items: center;
   position: relative;
 }
-@media (max-width: 768px) {
-  .header-content .left-header {
-    display: none;
-  }
-}
 .header-content .left-header .h-shape {
   transition: all 0.4s ease-in-out;
   width: 100%;
@@ -188,6 +183,12 @@ section {
           clip-path: polygon(0% 0%, 60% 0, 100% 50%, 60% 100%, 0% 100%);
   display: flex;
   align-items: center;
+}
+@media (max-width: 992px) {
+  .header-content .left-header .h-shape {
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 0% 100%);
+  }
 }
 .header-content .left-header .h-shape .img {
   width: 100%;
@@ -225,21 +226,25 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 8rem;
+  padding-left: 5rem;
+  padding-right: 10rem;
 }
 @media (max-width: 992px) {
   .header-content .right-header {
-    padding-right: 0;
+    padding-left: 4rem;
+    padding-right: 6rem;
   }
 }
 @media (max-width: 768px) {
   .header-content .right-header {
-    padding: 0 1.5rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
   }
 }
 @media (max-width: 576px) {
   .header-content .right-header {
-    padding: 0 2rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
   }
 }
 .header-content .right-header .name {
